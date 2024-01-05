@@ -1,0 +1,13 @@
+apiVersion: awx.ansible.com/v1beta1
+kind: AWX
+metadata:
+  name: awx
+  namespace: awx
+spec:
+  service_type: clusterip
+  ingress_type: ingress
+  ingress_path: /awx
+  ingress_annotations: |
+    kubernetes.io/ingress.class: nginx
+  hostname: www.automation-system.com
+# http://www.automation-system.com/#/login
