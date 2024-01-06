@@ -1,7 +1,0 @@
-[allowlist]
-  description = "Global Allowlist"
-
-  # Ignore based on any subset of the line
-  regexes = [
-    '''EfGxdSBE56HLvFbhTFQKUAKPXwMk5zoD''',
-  ]
