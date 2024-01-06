@@ -20,7 +20,12 @@
         scm_branch: main
         scm_update_on_launch: false
 
-    - name: add machine credential
+    - name: create inventory
+      awx.awx.inventory:
+        name: automation-system
+        organization: automation-system
+
+    - name: create machine credential
       awx.awx.credential:
         name: automation-system
         organization: automation-system
