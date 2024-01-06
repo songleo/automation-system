@@ -18,9 +18,7 @@ $ ssh user1@192.168.0.106 -p 22222
 $ export CONTROLLER_HOST="http://www.automation-system.com/awx/"
 $ export CONTROLLER_USERNAME="admin"
 $ export CONTROLLER_PASSWORD="EfGxdSBE56HLvFbhTFQKUAKPXwMk5zoD"
-$ ansible-playbook playbooks/configure_credential.yml
-$ ansible-playbook playbooks/configure_host.yml
-$ ansible-playbook playbooks/configure_job_template.yml
+$ ansible-playbook playbooks/configure_awx.yml
 ```
 
 最后通过playbook去将playbook运行在所有host包括新建的vm：
