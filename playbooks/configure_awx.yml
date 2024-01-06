@@ -15,8 +15,9 @@
       awx.awx.project:
         name: automation-system
         organization: automation-system
-        scm_type: "git"
-        scm_url: "https://github.com/songleo/automation-system.git"
+        scm_type: git
+        scm_url: https://github.com/songleo/automation-system.git
+        scm_branch: main
         scm_update_on_launch: true
 
     - name: add machine credential
