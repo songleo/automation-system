@@ -17,7 +17,7 @@ $ ssh user1@192.168.0.106 -p 22222
 ```
 $ export CONTROLLER_HOST="http://www.automation-system.com/awx/"
 $ export CONTROLLER_USERNAME="admin"
-$ export CONTROLLER_PASSWORD="EfGxdSBE56HLvFbhTFQKUAKPXwMk5zoD"
+$ export CONTROLLER_PASSWORD="EfGxdSBE56HLvFbhTFQKUAKPXwMk5zoD" # notsecret
 $ ansible-playbook playbooks/configure_awx.yml
 ```
 
