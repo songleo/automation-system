@@ -10,7 +10,7 @@ kubectl apply -f ingress-nginx/deploy.yaml
 
 # deploy the awx operator
 git clone git@github.com:ansible/awx-operator.git
-cd awx-operator
+cd awx-operator || exit
 git checkout 2.10.0
 IMG=quay.io/ansible/awx-operator:2.10.0 make deploy
 cd ..
