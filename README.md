@@ -19,7 +19,7 @@ By default, the admin user is `admin` and the password is available in the <reso
 
 ```
 $ kubectl get secret awx-admin-password -o jsonpath="{.data.password}" | base64 --decode ; echo
-JGwgNpvApMHYhnDcU9W1WHdcNlQzkCTt
+admin
 ```
 
 Please ensure that you add the mapping of IP addresses and domain names in your `/etc/hosts` file. For example, if your local IP is `192.168.0.106`, you need to add the following content to your `/etc/hosts` file.
@@ -28,7 +28,7 @@ Please ensure that you add the mapping of IP addresses and domain names in your 
 192.168.0.106 www.automation-system.com
 ```
 
-Then login from this URL: http://www.automation-system.com/awx/#/home
+Then login console from this URL: http://www.automation-system.com/awx/#/home or http://localhost/awx/#/home
 
 ### Troubleshooting
 

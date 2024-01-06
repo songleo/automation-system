@@ -27,7 +27,7 @@
         credential_type: Machine
         state: present
         inputs:
-          username: user1
+          username: admin
           password: admin
 
     - name: add a new host to inventory

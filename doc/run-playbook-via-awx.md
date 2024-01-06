@@ -8,8 +8,8 @@ $ docker run -d -p 22222:22 --name vm2 songleo/ubuntu-ssh
 你可以在本地通过一下方式验证，登录这个2个vm：
 
 ```
-$ ssh user1@192.168.0.106 -p 11111
-$ ssh user1@192.168.0.106 -p 22222
+$ ssh admin@192.168.0.106 -p 11111
+$ ssh admin@192.168.0.106 -p 22222
 ```
 
 然后使用playbook去配置你的awx，这里分别配置登录vm需要使用的credential，将vm加入awx，创建一个job template运行job：
@@ -17,7 +17,7 @@ $ ssh user1@192.168.0.106 -p 22222
 ```
 $ export CONTROLLER_HOST="http://www.automation-system.com/awx/"
 $ export CONTROLLER_USERNAME="admin"
-$ export CONTROLLER_PASSWORD="EfGxdSBE56HLvFbhTFQKUAKPXwMk5zoD" # notsecret
+$ export CONTROLLER_PASSWORD="admin" # notsecret
 $ ansible-playbook playbooks/configure_awx.yml
 ```
 
