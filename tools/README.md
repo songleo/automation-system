@@ -7,8 +7,9 @@ docker run -d -p 11111:22 --name vm1 songleo/ubuntu-ssh
 ssh admin@192.168.0.106 -p 11111
 ```
 
-## build image
+## 构建镜像
 
 ```
-
+$ docker build -t songleo/ubuntu-ssh .
+$ docker push songleo/ubuntu-ssh
 ```
