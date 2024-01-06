@@ -21,35 +21,36 @@ $ export CONTROLLER_PASSWORD="EfGxdSBE56HLvFbhTFQKUAKPXwMk5zoD"
 $ ansible-playbook playbooks/configure_awx.yml
 ```
 
-最后通过playbook去将playbook运行在所有host包括新建的vm：
+最后通过playbook运行新建的job template去ping 2个vm：
 
 ```
 $ ansible-playbook playbooks/launch_job.yml
 [WARNING]: No inventory was parsed, only implicit localhost is available
-[WARNING]: provided hosts list is empty, only localhost is available. Note that the
-implicit localhost does not match 'all'
+[WARNING]: provided hosts list is empty, only localhost is available. Note that the implicit localhost does not
+match 'all'
 
-PLAY [Launch job] *************************************************************************
+PLAY [Launch job] ************************************************************************************************
 
-TASK [Launch job] *************************************************************************
+TASK [Launch job] ************************************************************************************************
 changed: [localhost]
 
-TASK [Wait for the job to finish] *********************************************************
+TASK [Wait for the job to finish] ********************************************************************************
 ok: [localhost]
 
-TASK [Print the job result] ***************************************************************
+TASK [Print the job result] **************************************************************************************
 ok: [localhost] => {
     "job_result": {
         "changed": false,
-        "elapsed": 5.124,
+        "elapsed": 4.436,
         "failed": false,
-        "finished": "2024-01-06T08:04:22.357539Z",
-        "id": 63,
-        "started": "2024-01-06T08:04:17.233467Z",
+        "finished": "2024-01-06T09:10:06.248441Z",
+        "id": 102,
+        "started": "2024-01-06T09:10:01.812450Z",
         "status": "successful"
     }
 }
 
-PLAY RECAP ********************************************************************************
+PLAY RECAP *******************************************************************************************************
 localhost                  : ok=3    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0
+
 ```
