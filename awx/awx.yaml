@@ -10,4 +10,3 @@ spec:
   ingress_annotations: |
     kubernetes.io/ingress.class: nginx
   hostname: www.automation-system.com
-# http://www.automation-system.com/#/login
