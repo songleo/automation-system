@@ -35,7 +35,7 @@
           username: admin
           password: admin
 
-    - name: add a new host to inventory
+    - name: add new host to inventory
       awx.awx.host:
         name: "{{ item.name }}"
         inventory: automation-system
@@ -52,7 +52,7 @@
             ansible_ssh_host: 192.168.0.106
             ansible_ssh_port: 22222
 
-    - name: add a job template to ping host
+    - name: add job template to ping host
       awx.awx.job_template:
         name: ping-host
         job_type: run
