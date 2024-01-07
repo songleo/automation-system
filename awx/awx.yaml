@@ -9,6 +9,7 @@ spec:
   service_type: clusterip
   ingress_type: ingress
   ingress_path: /awx
+  projects_storage_size: 1Gi
   ingress_annotations: |
     kubernetes.io/ingress.class: nginx
   hostname: www.automation-system.com
